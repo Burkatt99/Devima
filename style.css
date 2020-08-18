@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr;
+    font-family: "Lato";
+    color: #323232;
+
+}
+.container .menu{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    justify-items: start;
+    grid-auto-columns: 80px;
+    font-size: 22px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.links{
+    display: grid;
+    margin: 35px 100px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3em;
+    font-family: "Lato";
+}
+.links a{
+    color: #323232;
+    text-decoration: none;
+}
+.links a:hover{
+    border-bottom: 2px solid grey;
+    padding-bottom: 5px;
+}
+.logo{
+    display: flex;
+    margin: 20px 70px;
+}
+.logo span{
+    margin: 10px 25px;
+    position: absolute;
+}
+
+.main_page .big_logo {
+    width: 20%;
+    margin: 220px 40% 20px;
+}
+.main_page #first{
+    width: 30%;
+    margin: 60px 32% 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    text-align: center;
+
+color: rgba(50, 50, 50, 0.8);
+}
+.main_page #second{
+  width: 50%;
+  height: 240px;
+  margin: 0 23%;
+  text-align: center;
+  font-size: 60px;
+  line-height: 134%;
+}
+.container .computer{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+.computer .bord{
+    grid-row: 1/5;
+    grid-column: 1;
+    
+}
+.computer .screen{
+    margin-top: 2%;
+    grid-row: 1/4;
+    grid-column: 1;
+}
+.computer .down{
+    grid-row: 3;
+    grid-column: 1;
+    margin-top: 3%;
+}
+.line {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.line #text {
+    display: inline-block;
+    margin: 0.4em 18%;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(50, 50, 50, 0.8);
+}
+.line #text::before {
+    content: '';
+    position: absolute;
+    width: 18%;
+    border-top: 1px solid lightslategray;
+    margin-top: .6em;
+    margin-left: -20%;
+}
+.tutor{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.tutor #text{
+    grid-column: 2/7;
+    font-size: 30px;
+    line-height: 50px;
+    color: #323232;
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    margin: 7% 0;
+}
+.icons .country, .team, .time{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.icons img{
+    width: 40%;
+    margin: 30px 30%;
+}
+.icons .time img{
+    width: 50%;
+}
+.icons span{
+    margin: 5px 0 25px;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(50, 50, 50, 0.8);
+}
+.icons h2{
+    font-size: 35px;
+    line-height: 60px;
+    color: #323232;
+}
+.icons .country{
+    grid-column: 2/3;
+}
+.icons .team{
+    grid-column: 3/4;
+}
+.icons .time{
+    grid-column: 4/5;
+}
+
+.laptop {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    margin-bottom: 60px;
+}
+.laptop #bord{
+    grid-row: 1/5;
+    grid-column: 1;
+    padding-top: 10px;
+}
+.laptop #screen_up{
+    margin-top: 2%;
+    grid-row: 1/4;
+    grid-column: 1;
+}
+.laptop #screen_down{
+    grid-row: 3;
+    grid-column: 1;
+}
+.screens{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 10% 0;
+}
+.screens .box1{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100px;
+}
+.screens .box1 .bord{
+    float:left;
+    overflow:hidden; 
+}
+.screens .box1 .bord img{
+      margin:0 -35%;
+  }
+.screens .box1 .screen img{
+    margin:2% -3%;
+}
+.screens .box1 .screen_down img{
+    margin:4% -3%;
+}
+.screens .box3 .screen_down img{
+    margin:-12% 0 0 38px;
+}
+.box1 .bord{
+    grid-row: 1/5;
+    grid-column: 1;
+}
+.box1 .screen{
+    grid-row: 1/4;
+    grid-column: 1;
+}
+.box1 .screen_down{
+    grid-row: 2;
+    grid-column: 1;    
+}
+.screens .box2{
+    grid-column: 2/4;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100px;
+    margin-left: 15%;
+}
+.box2 .bord{
+    grid-row: 1/5;
+    grid-column: 1;
+    z-index: 3;
+}
+.box2 .screen{
+    grid-row: 1/4;
+    grid-column: 1;
+    margin-left: 5%;
+    margin-top: 8px;
+    z-index: 1;
+}
+.box2 .screen_down{
+    grid-row: 2;
+    grid-column: 1;
+    margin: -7% 0 0 42px ;
+    z-index: 2;
+}
+.screens .box3{
+    grid-column: 4/5;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100px;
+    margin-left: 5%;
+}
+.box3 .bord{
+    grid-row: 1/5;
+    grid-column: 1;
+    z-index: 3;
+}
+.box3 .screen{
+    grid-row: 1/4;
+    grid-column: 1;
+    z-index: 1;
+    margin-left: 5%;
+}
+.box3 .screen_down{
+    grid-row: 2;
+    grid-column: 1;  
+    z-index: 2;  
+    margin-left: 5px;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: repeat(4,1fr);
+    margin: 10% 0 0 5%;
+}
+.images .image1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.images .laptop{
+    grid-row: 2/5;
+    grid-column: 2/4;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    margin-left: 15%;
+    z-index: 3;
+    }
+.images .laptop img{
+    margin-right: 20%;
+}
+.images .laptop .bord{
+        grid-row: 1/5;
+        grid-column: 1;
+        padding-top: 10px;
+        overflow: overlay;
+    }
+.images .laptop .screen{
+        margin-top: 2%;
+        grid-row: 1/4;
+        grid-column: 1;
+    }
+.images .laptop .screen_down{
+        grid-row: 2;
+        grid-column: 1;
+        margin-top: 8%;
+    }
+.images .image2{
+    grid-row: 3/5;
+    grid-column: 4/6;
+    z-index: 2;
+}
+.images .image3{
+    grid-row: 4;
+    grid-column: 2;
+    z-index: 4;
+    padding: 32% 0 0 17%;
+    position: absolute;
+}
+.images .image4{
+    grid-row: 4;
+    grid-column: 3;
+    display: grid;
+    justify-items: end;
+    z-index: 5;
+    margin: 56% 0 0 68%;
+}
+.images .image5{
+    grid-row: 4;
+    grid-column: 4;
+    z-index: 1;
+    margin: 68% -13% 0 0;
+}
+.develop{
+    display: grid;
+    grid-template-columns: 60% 20%;
+    grid-template-rows: repeat(5, 1fr);
+    margin: 10px 20%;
+}
+.develop .left{
+ grid-row: 1;
+ grid-column: 1/2;
+ display: grid;
+ grid-template-columns: 20% 60%;
+ padding: 20px 30px;
+ grid-gap: 2em;
+ justify-content: center;
+}
+.develop .right{
+
+}
